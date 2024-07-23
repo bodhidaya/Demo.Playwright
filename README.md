@@ -1,7 +1,7 @@
 
 # Playwright
 
-## Lesson 1
+## Lesson 01
 
 * Create an empty solution with GIT
 
@@ -13,3 +13,10 @@
 
 * If you get a powershell error regarding insufficient policy requirements do this
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+## Lesson 02
+
+* Writing a basic maths test
+
+* Every object in .NET is inherited from a type called "Object".
