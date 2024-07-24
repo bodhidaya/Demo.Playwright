@@ -7,7 +7,7 @@ using Microsoft.Playwright.MSTest;
 namespace GettingStarted
 {
     [TestClass]
-    public class GettingStartedTests : PageTest
+    public class LandingPageTests : PageTest
     {
         [TestMethod]
         public async Task HasTitle()
