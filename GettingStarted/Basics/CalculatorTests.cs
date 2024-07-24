@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 
 
-namespace GettingStarted
+namespace GettingStarted.Basics
 {
     [TestClass]
     public class CalculatorTests
     {
-        [DataTestMethod(displayName:"Test case 001 - Adding numbers")]
+        [DataTestMethod(displayName: "Test case 001 - Adding numbers")]
         [DataRow(10.0, 20.0, 30.0, DisplayName = "Adding positive numbers")]
         [DataRow(10.0, -20, -10, DisplayName = "Adding positive and negative numbers")]
         [DataRow(0, 0, 0, DisplayName = "Adding zeros")]

@@ -4,7 +4,7 @@ using Microsoft.Playwright.MSTest;
 
 
 
-namespace GettingStarted
+namespace GettingStarted.Basics
 {
     [TestClass]
     public class LandingPageTests : PageTest

@@ -2,7 +2,7 @@
 using Microsoft.Playwright;
 using Microsoft.Playwright.MSTest;
 
-namespace PlaywrightTests;
+namespace GettingStarted.Basics;
 
 [TestClass]
 public class ExampleTest1 : PageTest
