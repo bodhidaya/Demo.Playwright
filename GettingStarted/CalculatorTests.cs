@@ -11,13 +11,17 @@ namespace GettingStarted
     [TestClass]
     public class CalculatorTests
     {
-        [TestMethod]
-        public void Adding()
+        [DataTestMethod(displayName:"Test case 001 - Adding numbers")]
+        [DataRow(10.0, 20.0, 30.0, DisplayName = "Adding positive numbers")]
+        [DataRow(10.0, -20, -10, DisplayName = "Adding positive and negative numbers")]
+        [DataRow(0, 0, 0, DisplayName = "Adding zeros")]
+        [DataRow(-10, -20, -30, DisplayName = "Adding negative numbers")]
+        [DataRow(-10.132, -20.234, -30.366, DisplayName = "Adding negative numbers with three number precision")]
+        public void Adding(double input1, double input2, double expected)
         {
-            Calculator calculator = new Calculator();
-            var total = calculator.Add(10, 20);
-
-            Assert.AreEqual(30, total);
+            var calculator = new Calculator();
+            var total = calculator.Add((decimal)input1, (decimal)input2);
+            Assert.AreEqual((decimal)expected, total);
         }
 
         [TestMethod]
@@ -44,7 +48,7 @@ namespace GettingStarted
             Assert.AreEqual(4, total);
         }
 
-         [TestMethod]
+        [TestMethod]
         public void Remainder()
         {
             Calculator calculator = new Calculator();
